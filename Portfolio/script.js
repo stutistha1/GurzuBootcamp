@@ -15,6 +15,20 @@ $(document).ready(function(){
     });
 }); 
 
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["IT Student","Tech Enthusiast","Developer","Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["IT Student","Tech Enthusiast","Developer","Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
 // for contact and the icon of title
     function fun() {
