@@ -30,12 +30,14 @@ $(document).ready(function(){
         loop: true
     });
 
-// for contact and the icon of title
+// for contact validation 
     $("#submitForm").click(function() {
         if($('#my1' && '#my2' && '#my3' && '#my4').val()!==''){
         alert("The Form has been Submitted. Thank You!!");
         }
    });
+
+//for the icon of title
     var d = new Date();
     var s= 0;
     var m=0;
