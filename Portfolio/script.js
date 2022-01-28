@@ -31,9 +31,11 @@ $(document).ready(function(){
     });
 
 // for contact and the icon of title
-    function fun() {
-        alert ("Thank You for you response");
-    }
+    $("#submitForm").click(function() {
+        if($('#my1' && '#my2' && '#my3' && '#my4').val()!==''){
+        alert("The Form has been Submitted. Thank You!!");
+        }
+   });
     var d = new Date();
     var s= 0;
     var m=0;
