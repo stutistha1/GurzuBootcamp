@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"> 
+
+        var d = new Date();
+        var s= 0;
+        var m=0;
+        var h=0;
+        var count = 2;
+        setInterval(function() {
+            d = new Date();
+            // m=d.getMilliseconds();
+            if (count<=43){
+                document.getElementById("icon").href = "icon/apngframe"+count+".png";
+                count=count+1;
+            }else{count=1;}
+            // document.title =m;
+        },23.255814)
+
+    </script>
+    <link rel="icon" type="image/png" href="icon/apngframe1.png" id="icon"/> 
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
@@ -33,7 +52,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Stuti Shrestha</div>
                 <div class="text-3">And I'm a  <span>IT Student</span></div>
-                <a href="#">Hire me</a>
+                <a href="mailto:shrestha.stuti@gmail.com?Subject= Stuti Shrestha, will you join us?&body=Hey Stuti,%0A On behalf of everyone at [Company name], we’re delighted to offer you the role of [Job title]!.....  ">Hire me</a>
             </div>
         </div>
     </section>
@@ -48,8 +67,8 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Stuti and I'm a <span>IT Student</span></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis temporibus, laborum eligendi at unde aperiam culpa aliquid reiciendis a perferendis, sequi inventore nihil nesciunt sed alias quidem, minima molestias molestiae expedita recusandae obcaecati itaque eveniet! Libero non harum inventore placeat autem quas perferendis sed officia, cupiditate officiis eum corporis sequi natus eius, ipsum explicabo! Qui modi eaque dolorem! Quibusdam, iste?</p>
-                    <a href="#">Download CV</a>
+                    <p>Energetic and passionate college student currently in last year studying BSc (Hons) Computing in Islington College. I currently live in Kathmandu and my main focus is in Mobile development due to which I am trying to gain Knowledge about it as much as possible. Additionally, I am also interested on social gathering, reading books, writing, drawing and so on during my free time. I am an enthusiastic learner and curious to learn new things.I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.To know more about me, you can download my CV.</p>
+                    <a href="https://drive.google.com/file/d/1lYVsBTlGjKkpFW8rzixRCllz1tlpCf9E/view?usp=sharing" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -62,7 +81,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum pariatur sed obcaecati ad beatae, velit quod, enim ipsum esse nobis soluta provident ea aliquid temporibus ullam. Eum adipisci nesciunt fuga. Repellat cumque distinctio corrupti voluptate minima mollitia corporis voluptatibus qui. Accusantium accusamus tempora quae beatae nisi quaerat. Libero mollitia cupiditate sint nesciunt deserunt nobis dolorem alias, quis aspernatur eveniet!</p>
+                    <p>As you can see on other side where u have shown my various technical skills. The skills that are not shown are my interpersonal skills like I am very good at time management, my communication skills are good enough. I am very adaptable and flexible according to my work environment. I also have team working skills as I had done various projects in group in my college. I am active listener as I focus on everything needed.I have curisoity to explore more and learn more,I am calm and good at problem solving which makes me more creative in my work. Because of everything I am , I am able to give my best in everything i do.</p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
@@ -110,10 +129,10 @@
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
+            <div class="contact-content"style="display: flex;flex-wrap: wrap;">
+                <div class="column left" >
                     <div class="text">Get In Touch</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est velit eos itaque ratione iure, ipsam quisquam molestiae ea facere nihil, obcaecati eveniet expedita quibusdam labore! Ex quam sint neque suscipit qui tempora adipisci architecto, soluta consequatur, beatae molestias porro tempore ad asperiores, est necessitatibus inventore recusandae impedit. Ex vitae quaerat veniam, nobis suscipit ipsum, aspernatur ab voluptas, nam dignissimos in.</p>
+                    <p>To contact me you can use can email me at or to know anything related to me you can use the given email address. For any work or any queries you can leave the message in the side form provided to you.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -139,25 +158,29 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="field">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                    <a class="text">Message me</a>
+                    <div style="display: flex;flex-wrap: wrap; margin-bottom: 40vh;margin-left: 5vw;padding-top: 20px;">
+                        <form action="https://formsubmit.co/shrestha.stuti@gmail.com" method="POST">
+                            <input type="hidden" name="_next" value="https://stutiportfolio.netlify.app/">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="field">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" name=”name” required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" name=”email” required>
+                                </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" name="_subject" required>
                             </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                            <div class="field textarea">
+                                <textarea id="" cols="30" rows="10" placeholder="Ask Queries..." name=”message” required></textarea>
                             </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Ask Queries..." required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send Message</button>
-                        </div>
-                    </form>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
